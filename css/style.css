@@ -13,6 +13,43 @@
     color: var(--main-color);
 }
 
+body{
+    margin:0;
+}
+
+header{
+    display: flex;
+    border: 3px solid red;
+    /*justify-content: space-around;*/
+	flex-wrap: wrap;
+    height: 79px;
+}
+
+nav{
+    border: 3px solid yellow;
+    width: 300px;
+    margin-left: auto;
+    display: flex;
+    /*position: relative;*/
+}
+
+nav ul{
+    display: flex;
+    list-style-type:none;
+    margin: 0;
+}
+
+nav li {
+    border: 3px solid blue;
+    /*position: absolute;
+    top: 0;*/
+    margin: 0;
+}
+nav li:hover {
+    border-top:2px solid indigo;
+}
+
+
 body {
     display: flex;
     justify-content: center;
