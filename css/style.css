@@ -16,16 +16,31 @@
 /* header */
 header{
     display: flex;
-    border: 3px solid red;
     justify-content: space-between;
 	flex-wrap: wrap;
-    height: 79px;
 }
 
-nav{
-    border: 3px solid yellow;
-    width: 300px;
+
+
+/*button,
+input,
+textarea,
+select {
+    font: inherit;
+}*/
+
+
+
+
+
+.blocimg{
+    margin: 30px 50px;
 }
+.logo{
+    height: 19px;
+}
+
+
 
 nav ul{
     display: flex;
@@ -35,13 +50,14 @@ nav ul{
 }
 
 nav li {
-    border: 3px solid blue;
-    /*position: absolute;
-    top: 0;*/
     margin: 0;
+    font-size: 1rem;
+    padding-top: 50px;
 }
+
 nav li:hover {
     border-top:2px solid indigo;
+
 }
 
 
@@ -49,6 +65,7 @@ body {
     display: flex;
     justify-content: center;
     margin : 0;
+    flex-direction: column;
 }
 
 .main-container {
