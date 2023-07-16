@@ -1,16 +1,53 @@
 /****** General ***********/
-* {
-    font-family: 'Raleway', sans-serif;
-}
-
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --neutral-color: black;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
 }
 
 .fa-solid {
     color: var(--main-color);
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+/* general styling */
+
+body {
+    font-weight: var(--fw-regular);
+    color: var(--neutral-color);
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
 }
 
 /* header */
@@ -18,54 +55,56 @@ header{
     display: flex;
     justify-content: space-between;
 	flex-wrap: wrap;
+    /*height: 79px;*/
 }
-
-
-
-/*button,
-input,
-textarea,
-select {
-    font: inherit;
-}*/
-
-
-
-
 
 .blocimg{
     margin: 30px 50px;
 }
+
 .logo{
     height: 19px;
+    /*margin-left: auto;  
+    margin-right: auto;*/  
 }
-
 
 
 nav ul{
     display: flex;
     list-style-type:none;
-    margin: 0;
-    gap: 1em;
+    /*gap: 1em;*/
+    gap: 68px;
+    padding: 0 50px;
 }
 
-nav li {
-    margin: 0;
+nav ul li a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+    font-size: inherit;
+}
+
+nav ul li {
     font-size: 1rem;
-    padding-top: 50px;
+    padding-top: 9px;
+    border-top:2px solid transparent;
 }
 
-nav li:hover {
-    border-top:2px solid indigo;
+nav ul li:hover {
+    border-top:2px solid var(--main-color);
+    color: var(--main-color);
 
 }
 
-
-body {
+main {
     display: flex;
-    justify-content: center;
-    margin : 0;
+    margin-top: 30px;
+    gap: 35px;
     flex-direction: column;
+    padding: 0px 50px;
+}
+
+.flex-group {
+    flex-direction: row;
 }
 
 .main-container {
@@ -76,8 +115,7 @@ body {
 }
 
 .section-title {
-    margin: 0;
-    font-size: 22px;
+    font-size: 1.375rem;
 }
 
 .card {
@@ -105,7 +143,7 @@ body {
 
 .search-and-filter {
     /*white-space: pre-wrap;*/
-    margin: 0;
+    margin-top: 0;
 }
 
 /****** Hebergements And Populaires ***********/
