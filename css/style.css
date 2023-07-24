@@ -460,13 +460,11 @@ footer nav ul li a {
 
 footer nav ul li {
     font-size: 1rem;
-
 }
 
 footer nav {
     display: flex;
     justify-content: flex-start;
-    display: flex;
     padding: 20px;
     gap: 15px;
     flex: 1 0 0;
@@ -728,12 +726,7 @@ footer nav {
     }
 
     footer nav {
-        display: flex;
         justify-content: space-evenly;
-        display: flex;
         padding: 0px;
-        gap: 15px;
-        flex: 1 0 0;
-        flex-direction: column;
     } 
 }
