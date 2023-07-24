@@ -42,7 +42,6 @@ body {
     color: var(--neutral-color);
     font-size: 1rem;
     line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
     margin: 0;
     padding: 0;
 }
@@ -690,7 +689,7 @@ footer nav {
 
     .populaires {
         margin-top: 0;
-        border-radius: none;
+        border-radius: unset;
     }
 
     .populaires-cards {
