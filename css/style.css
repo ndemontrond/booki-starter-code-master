@@ -537,7 +537,6 @@ footer nav {
     header{
         flex-direction: column;
         justify-content: space-evenly;
-
         align-items: stretch;
         align-self: stretch;
     }
@@ -551,8 +550,6 @@ footer nav {
     header nav {
         display: flex;
         justify-content: space-evenly;
-
-        /*align-self: stretch;*/
         align-items: stretch;
     }
 
